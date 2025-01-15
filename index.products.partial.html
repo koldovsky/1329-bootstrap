@@ -1,69 +1,135 @@
 <section id="products" class="products container">
-    <h2 class="products__title">Products</h2>
-    <div class="products__list">
-        <article class="products__item">
-            <img class="products__image" src="img/baby-yoda.svg" alt="Baby Yoda">
-            <h3 class="products__name">Baby Yoda</h3>
-            <p class="products__description">Lorem ipsum <a href="#">dolor</a> sit amet consectetur, adipisicing elit.
-                Porro fuga autem possimus eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque
-                suscipit. Vero illo nulla asperiores laudantium tempore porro!
-            </p>
-            <div class="products__actions">
-                <button class="products__button products__button--info button button-card">
-                    Info
-                </button>
-                <button class="products__button products__button--buy button button-card">
-                    Buy
-                </button>
-            </div>
-        </article>
-        <article class="products__item">
-            <img class="products__image" src="img/banana.svg" alt="Banana" />
-            <h3 class="products__name">Banana</h3>
-            <p class="products__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem
-                possimus eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Vero
-                illo nulla asperiores laudantium tempore porro!
-            </p>
-            <div class="products__actions">
-                <button class="products__button products__button--info button button-card">
-                    Info
-                </button>
-                <button class="products__button products__button--buy button button-card">
-                    Buy
-                </button>
-            </div>
-        </article>
-        <article class="products__item">
-            <img class="products__image" src="img/girl.svg" alt="Girl" />
-            <h3 class="products__name">Girl</h3>
-            <p class="products__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem
-                possimus eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Вero
-                illo nulla asperiores laudantium tempore porro!
-            </p>
-            <div class="products__actions">
-                <button class="products__button products__button--info button button-card">
-                    Info
-                </button>
-                <button class="products__button products__button--buy button button-card">
-                    Buy
-                </button>
-            </div>
-        </article>
-        <article class="products__item">
-            <img class="products__image" src="img/viking.svg" alt="Viking" />
-            <h3 class="products__name products__name--viking">Viking</h3>
-            <p class="products__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro fuga autem
-                possimus eveniet facere, non minus magnam obcaecati, tenetur recusandae, corporis itaque suscipit. Вero
-                illo nulla asperiores laudantium tempore porro!
-            </p>
-            <div class="products__actions">
-                <button class="products__button products__button--info button button-card">
-                    Info
-                </button>
-                <button class="products__button products__button--buy button button-card">
-                    Buy
-                </button>
-            </div>
-        </article>
+  <h2 class="products__title">Products</h2>
+  <div class="products__list row">
+    <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+      <img src="img/baby-yoda.svg" class="card-img-top" alt="Baby Yoda" />
+      <div class="card-body">
+        <h5 class="card-title">Baby Yoda</h5>
+        <p class="card-text">
+          Baby Yoda, also known as Grogu, is a character from the Star Wars
+          universe. He is a small, green, and adorable creature with big ears
+          and expressive eyes. Grogu has captured the hearts of fans with his
+          cuteness and mysterious background. He possesses strong Force
+          abilities and is sought after by many in the galaxy.
+        </p>
+        <a
+          href="#"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#product-info-modal"
+          >Info</a
+        >
+        <a href="#" class="btn btn-success">Buy</a>
+      </div>
+    </article>
+    <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+      <img src="img/banana.svg" class="card-img-top" alt="Banana" />
+      <div class="card-body">
+        <h5 class="card-title">Banana</h5>
+        <p class="card-text">
+          Bananas are one of the world's most appealing fruits. They are
+          essential for a healthy diet, providing numerous vitamins and
+          minerals. Bananas are known for their high potassium content, which
+          helps maintain proper heart function and regulates blood pressure.
+        </p>
+        <a href="#" class="btn btn-primary">Info</a>
+        <a href="#" class="btn btn-success">Buy</a>
+      </div>
+    </article>
+    <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+      <img src="img/girl.svg" class="card-img-top" alt="Girl" />
+      <div class="card-body">
+        <h5 class="card-title">Girl</h5>
+        <p class="card-text">
+          This illustration of a girl represents the joy and innocence of
+          childhood. It captures the essence of youth and the carefree spirit
+          that comes with it. The image is perfect for children's books,
+          educational materials, and more.
+        </p>
+        <a href="#" class="btn btn-primary">Info</a>
+        <a href="#" class="btn btn-success">Buy</a>
+      </div>
+    </article>
+    <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+      <img src="img/viking.svg" class="card-img-top" alt="Viking" />
+      <div class="card-body">
+        <h5 class="card-title">Viking</h5>
+        <p class="card-text">
+          Vikings were Norse seafarers known for their exploration, trade, and
+          raids across Europe during the Viking Age. They were skilled
+          navigators and warriors, leaving a lasting impact on the regions they
+          encountered. This image symbolizes their adventurous spirit and
+          cultural heritage.
+        </p>
+        <a href="#" class="btn btn-primary">Info</a>
+        <a href="#" class="btn btn-success">Buy</a>
+      </div>
+    </article>
+  </div>
+  <div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          href="#home"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+          >Animal Stickers</a
+        >
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          href="#profile"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+          >Cartoon Stickers</a
+        >
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="contact-tab"
+          data-bs-toggle="tab"
+          href="#contact"
+          role="tab"
+          aria-controls="contact"
+          aria-selected="false"
+          >Nature Stickers</a
+        >
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <p>Animal Stickers content goes here.</p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        <p>Cartoon Stickers content goes here.</p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+      >
+        <p>Nature Stickers content goes here.</p>
+      </div>
     </div>
+  </div>
 </section>
